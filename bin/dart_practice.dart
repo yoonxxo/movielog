@@ -1,3 +1,5 @@
+import 'dart:io';
+
 class Movie {
   const Movie({required this.id, required this.title});
 
@@ -20,8 +22,8 @@ void main() {
   ];
 
   for (final movie in movies) {
-    print(movie.title);
+    stdout.writeln(movie.title);
   }
   final String? nickname = null;
-  print(displayName(nickname));
+  stdout.writeln(displayName(nickname));
 }
